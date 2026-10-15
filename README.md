@@ -17,6 +17,7 @@ TruthLens is an academic college capstone research project designed to explore t
 - [Automated Testing & Verification](#automated-testing--verification)
 - [API Reference](#api-reference)
 - [Model Architecture & Hardware Behavior](#model-architecture--hardware-behavior)
+- [Model Evaluation & Benchmark Results](#model-evaluation--benchmark-results)
 - [Responsible AI, Limitations & Known Risks](#responsible-ai-limitations--known-risks)
 - [Project Status & Roadmap](#project-status--roadmap)
 - [License](#license)
@@ -46,7 +47,7 @@ Digital misinformation and distorted headlines spread rapidly across social plat
 - **Responsible Presentation Notice**: Prominently warns users about model uncertainty, dataset biases, and the distinction between statistical confidence and factual ground truth.
 - **Demonstration Presets**: Includes pre-configured sample inputs for rapid interface testing, explicitly labeled as demonstration samples rather than verified facts.
 - **Live Backend Health Indicator**: Real-time polling badge in navigation bar verifying connectivity against the `/health` endpoint.
-- **Automated Test Coverage**: 24 backend pytest tests and 6 frontend unit tests validating schemas, error states, and regression isolation.
+- **Automated Test Coverage**: 37 backend pytest tests and 6 frontend unit tests validating schemas, error states, evaluation mapping, and regression isolation.
 
 ---
 
@@ -104,6 +105,7 @@ flowchart TD
 - **Validation**: Pydantic v2 (>=2.6.0)
 - **Deep Learning**: PyTorch (>=2.2.0) with Apple Silicon MPS support
 - **NLP / Model**: Hugging Face Transformers (>=4.38.0)
+- **Model Evaluation**: Scikit-learn (>=1.4.0)
 - **Testing**: Pytest (>=8.0.0), HTTPX (TestClient)
 
 ### Frontend
@@ -123,7 +125,7 @@ fake-news-detector/
 ├── README.md                       # Comprehensive project documentation
 ├── backend/                        # FastAPI application & ML service
 │   ├── .venv/                      # Python 3.11 virtual environment (gitignored)
-│   ├── requirements.txt            # Python dependencies (FastAPI, PyTorch, Transformers)
+│   ├── requirements.txt            # Python dependencies (FastAPI, PyTorch, Transformers, Scikit-learn)
 │   ├── app/
 │   │   ├── __init__.py             # App package definition
 │   │   ├── config.py               # Model settings, input bounds, device configuration
@@ -134,9 +136,16 @@ fake-news-detector/
 │   │   └── services/
 │   │       ├── __init__.py         # Services package definition
 │   │       └── classifier.py       # BERT classifier service, MPS/CPU fallback, singleton
+│   ├── evaluation_results/         # Reproducible model evaluation reports (git-tracked)
+│   │   ├── liar_predictions_compact.json # Row-level audit predictions (IDs & labels only)
+│   │   └── liar_test_report.json   # Machine-readable evaluation report
+│   ├── scripts/
+│   │   ├── __init__.py             # Scripts package definition
+│   │   └── evaluate_model.py       # Standalone CLI evaluation script (LIAR benchmark)
 │   └── tests/
 │       ├── __init__.py             # Tests package definition
 │       ├── test_classifier.py      # Unit tests for classifier service & regression isolation
+│       ├── test_evaluation.py      # Unit tests for evaluation mapping, metrics, and report integrity
 │       ├── test_health.py          # Backend health check & root route tests
 │       └── test_prediction.py      # Integration tests for /api/predict & error handling
 └── frontend/                       # React + Vite + TypeScript application
@@ -263,6 +272,9 @@ From the repository root:
 - Hardware device resolution and graceful CPU fallback.
 - Sanitized error handling for HTTP 503 and HTTP 500 without leaking stack traces.
 - Regression test verifying distinct inputs are tokenized and processed independently without cross-input caching.
+- Operational label mapping unit tests (`false`, `pants-fire`, `barely-true` -> `FAKE`; `true`, `mostly-true` -> `REAL`; `half-true` excluded).
+- Metric calculation tests verifying zero-division handling, finite bounds, and confusion matrix totals.
+- Automated integrity verification of saved evaluation reports.
 
 ### 2. Frontend Test Suite (Node.js Native Test Runner)
 From the `frontend/` directory:
@@ -401,6 +413,92 @@ The backend dynamically inspects available hardware devices at runtime:
 
 ---
 
+## Model Evaluation & Benchmark Results
+
+To understand the empirical behavior of the frozen classification model (`dima806/fake-news-classifier`), an exploratory out-of-domain evaluation was conducted against the test split of the widely recognized **LIAR benchmark** under an audited binary operational mapping.
+
+### Dataset Provenance & Protocol
+
+* **Authoritative Data Source**: [UCSB LIAR Original Publication Archive](https://www.cs.ucsb.edu/~william/data/liar_dataset.zip) (by William Yang Wang, *Liar, Liar Pants on Fire: A New Benchmark Dataset for Fake News Detection*, ACL 2017).
+* **Archive Direct URL**: `https://www.cs.ucsb.edu/~william/data/liar_dataset.zip`
+* **Verified Archive SHA-256**: `611c1addad919743dde15822b87a60bfb760d8f85597f25289e34621800654c7`
+* **Reference Metadata Pointer**: The Hugging Face dataset repository [`ucsbai/liar`](https://huggingface.co/datasets/ucsbai/liar) (commit `ff3a15312273f5294c4418c1c3c28781e1d51afe`) provides metadata and a legacy loading script pointing to the UCSB archive; the archive bytes evaluated were loaded directly from the authoritative UCSB zip file.
+* **Test Split Rows**: 1,283 total rows parsed from `test.tsv`.
+* **Field Evaluated**: The `statement` field only. All auxiliary metadata (speaker, party affiliation, venue, context, credit history) were excluded to evaluate pure textual semantic classification.
+* **Operational Label Mapping**:
+  * **`FAKE`**: `false` (250) + `pants-fire` (92) + `barely-true` (214) = **556**
+  * **`REAL`**: `true` (211) + `mostly-true` (249) = **460**
+  * **`EXCLUDED`**: `half-true` (267) excluded as ambiguous under this binary research protocol.
+  * **Total Evaluated**: **1,016** statements ($556 + 460 = 1,016$; $1,016 + 267 = 1,283$).
+
+> [!NOTE]
+> **Research Convention Notice**: This binary mapping is an operational research convention mapping six fine-grained political truthfulness ratings to binary fake/real classification. It does **not** constitute a universal ground truth standard or definitive factual verification.
+
+### Empirical Evaluation Metrics
+
+All metrics were computed in frozen inference mode (`torch.inference_mode()`, zero-division safe) against the 1,016 evaluated test statements:
+
+| Metric | Positive Class / Averaging | Measured Score |
+| :--- | :--- | :--- |
+| **Overall Accuracy** | $(416 + 84) / 1,016$ | **49.21%** (0.4921) |
+| **FAKE Precision** | Positive Class: `FAKE` | **0.5253** |
+| **FAKE Recall** | Positive Class: `FAKE` | **0.7482** |
+| **FAKE F1 Score** | Harmonic Mean (FAKE) | **0.6172** |
+| **REAL Precision** | Class: `REAL` | **0.3750** |
+| **REAL Recall** | Class: `REAL` | **0.1826** |
+| **REAL F1 Score** | Harmonic Mean (REAL) | **0.2456** |
+| **Macro F1** | Unweighted Mean of Class F1s | **0.4314** |
+| **Weighted F1** | Support-Weighted Class F1s | **0.4490** |
+
+### Confusion Matrix
+
+Convention: Rows represent **Actual Class** `[FAKE, REAL]`; columns represent **Predicted Class** `[FAKE, REAL]`.
+
+| | Predicted FAKE | Predicted REAL | Total Actual |
+| :--- | :---: | :---: | :---: |
+| **Actual FAKE** | **416** *(True Positive)* | **140** *(False Negative)* | **556** |
+| **Actual REAL** | **376** *(False Positive)* | **84** *(True Negative)* | **460** |
+| **Total Predicted** | **792** | **224** | **1,016** |
+
+#### Key Empirical Observations
+1. **Marked `FAKE` Prediction Bias**: The model classified **792 out of 1,016** statements (**77.95%**) as `FAKE`.
+2. **Low REAL Recall**: The model correctly identified only **84 out of 460** actual `REAL` statements (**18.26% recall**), incorrectly labeling 376 truthful or mostly-truthful claims as `FAKE`.
+3. **Critical User Caution**: These findings illustrate why automated classifications or high confidence scores must **never** be treated as verified facts or factual proof.
+
+### Reproducibility & Running the Evaluation
+
+To reproduce the evaluation pipeline and regenerate the benchmark report from the repository root:
+
+```bash
+# Ensure dependencies are installed
+pip install -r backend/requirements.txt
+
+# Execute standalone evaluation script
+python backend/scripts/evaluate_model.py
+
+# Alternatively, run directly via project virtual environment:
+./backend/.venv/bin/python backend/scripts/evaluate_model.py
+```
+
+#### Storage & Data Handling
+* **External Caching**: Downloaded dataset archives are stored in the user's external cache (`~/.cache/truthlens_eval/liar_dataset.zip`) and model weights in `~/.cache/huggingface/`, keeping large binaries outside the Git repository.
+* **Audit Reports**: The comprehensive machine-readable report is saved to:
+  `backend/evaluation_results/liar_test_report.json`
+* **Compact Predictions Artifact**: Individual row-level evaluation pairings are exported to:
+  `backend/evaluation_results/liar_predictions_compact.json`
+  *Licensing Note*: To comply with PolitiFact API and academic dataset constraints, this compact file records only benchmark item IDs, original labels, mapped ground truth, and model predictions; statement texts are deliberately **not** redistributed.
+
+### Methodological Limitations
+
+1. **Operational Binary Mapping**: Collapsing a 6-tier nuanced truthfulness scale into binary `FAKE`/`REAL` labels is an operational simplification that induces artificial boundary errors.
+2. **Absence of Training Provenance**: Training logs, datasets, and preprocessing scripts for `dima806/fake-news-classifier` are not documented by the model author. Consequently, training-data overlap, domain shift causes, or vocabulary sensitivity cannot be established causally from this evaluation alone.
+3. **No Generalization Guarantee**: Performance on this English political statement split does not reflect accuracy across other domains (e.g., medical claims, breaking news, long-form investigative journalism, or non-English content).
+4. **Non-Calibrated Output**: Confidence scores reflect classification certainty under learned model priors, not calibrated probabilities that a claim is objectively true.
+5. **Preliminary Research Tool**: TruthLens is an academic demonstration system, not a substitute for professional, independent journalistic fact-checking.
+
+
+---
+
 ## Responsible AI, Limitations & Known Risks
 
 TruthLens is an academic research prototype and must be assessed with appropriate context:
@@ -427,6 +525,7 @@ TruthLens is an academic research prototype and must be assessed with appropriat
 - **Milestone 3**: React dashboard integration, live health checks, demonstration samples, probability visualizer, and responsible interpretation notices.
 - **Milestone 3.1 & Commit**: Pre-commit audit, whitespace hygiene, and commit `f5dd823` pushed to `main`.
 - **Milestone 4A**: Comprehensive project documentation and evaluation guide.
+- **Milestones 5.1 – 5.4**: Independent model evaluation against the LIAR benchmark test split, evaluation integrity audit with SHA-256 archive verification, compact predictions artifact export, and complete reproducibility documentation.
 
 ### Planned Future Milestones
 - **Source & URL Reputation Signals**: Domain classification based on audited journalistic trust datasets.

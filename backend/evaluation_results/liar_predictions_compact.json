@@ -1,0 +1,6098 @@
+[
+  {
+    "id": "11972.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11685.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11096.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9524.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5962.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7070.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1046.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12849.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13270.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6649.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2508.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11269.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11200.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4888.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3331.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "73.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1328.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12169.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12996.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8162.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10064.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1084.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13231.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1051.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4161.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11966.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9800.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12381.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9092.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10055.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4513.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10340.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6849.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13251.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7545.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4929.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6239.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8841.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6313.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9550.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13272.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7562.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9578.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2356.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1066.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2092.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7442.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9910.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11083.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11443.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2966.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13367.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1087.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "267.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4272.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8372.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3518.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8340.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12698.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2357.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12541.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2854.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2072.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2885.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12309.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1420.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8761.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2491.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1075.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9762.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5935.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2821.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6370.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3706.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10163.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2796.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6083.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5913.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "934.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2162.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3161.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2679.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8929.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12398.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2690.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8667.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8941.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6821.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10631.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11400.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3228.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1915.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12456.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4698.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2585.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6604.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4495.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8406.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10147.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10623.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8146.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13056.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1103.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4444.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9269.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4105.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8533.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6950.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13125.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8294.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9908.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12424.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4309.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "110.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7677.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4780.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "715.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3107.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7565.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10948.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12210.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4119.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7272.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4016.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6765.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11867.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11777.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9051.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4243.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7818.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9507.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11324.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6046.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8434.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3637.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7744.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2897.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6060.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "603.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11545.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5461.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6684.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "450.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "769.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "502.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11711.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5470.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8869.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10250.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10757.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8320.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5472.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5505.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12427.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11464.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11778.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12961.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10269.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13400.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1251.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6112.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6431.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2615.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3709.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2652.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9146.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "184.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11764.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7692.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7876.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5171.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12950.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11185.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2412.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3215.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "948.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "592.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5732.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5017.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12331.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10424.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9091.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2547.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12571.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7810.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10935.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8433.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7087.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1025.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6386.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2392.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4708.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8676.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8809.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4095.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12167.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2876.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1760.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6513.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7780.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7418.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2777.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8853.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7758.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10208.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1569.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11805.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "805.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8030.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7678.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "139.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7271.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11409.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "688.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3726.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7461.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5363.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9942.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3575.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2205.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7552.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7135.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "384.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13007.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12994.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3436.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5810.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6141.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1971.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7008.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8963.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8151.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6236.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6974.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6879.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11639.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9343.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "737.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10516.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4750.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8604.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12702.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8901.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1353.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5938.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12158.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "656.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10085.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5824.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5753.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5512.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "125.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "727.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "42.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6262.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9502.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11351.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8558.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12084.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "568.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9708.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4537.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8549.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3158.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10794.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12461.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "63.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6560.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3036.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11910.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4101.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10175.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4593.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5985.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1881.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "204.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10091.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1409.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2769.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2600.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2911.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2442.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3489.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12006.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9109.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12661.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2983.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13467.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "921.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9141.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12648.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3674.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8240.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9405.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1892.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "31.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4711.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "664.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1199.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11865.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "87.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9312.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3021.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "379.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "683.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1781.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11687.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "771.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10749.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7834.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1477.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10881.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4396.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6206.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9970.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4353.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1394.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7695.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4770.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1052.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5249.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3700.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8683.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12798.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7680.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1999.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12873.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9683.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6660.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13527.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2626.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2746.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12448.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3232.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11226.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "487.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6858.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8701.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10606.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2371.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12065.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2362.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2868.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13305.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8503.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "636.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5758.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2793.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9426.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5898.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11218.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12703.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5462.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1955.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11647.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11139.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1648.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5371.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4425.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2498.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4131.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2341.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11519.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5785.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2284.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12650.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9480.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11242.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7038.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6772.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7952.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9629.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3668.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11327.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3818.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11562.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9622.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9995.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7344.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5840.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1576.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13127.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12098.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12272.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5993.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9285.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11025.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7577.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2719.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3631.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7211.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1480.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5723.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "531.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "474.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2250.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "126.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10646.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1823.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9731.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9594.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5971.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6857.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11832.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10853.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9050.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9427.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6532.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4805.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3648.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "526.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8673.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9273.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9197.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9610.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2087.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8035.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1329.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1574.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6745.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4383.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12089.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12976.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5170.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6976.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7838.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2643.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10097.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13236.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2568.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12833.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7881.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5603.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5759.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2149.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2445.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10399.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12929.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12791.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9003.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3811.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3399.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11229.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3800.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10283.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "352.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4134.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7448.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12987.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13329.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4588.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6455.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10282.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "211.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7676.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1873.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12284.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7197.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3414.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4323.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "275.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13208.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4277.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2601.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5653.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13046.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3103.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2894.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1012.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9112.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2945.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9944.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6839.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3673.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13058.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10917.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13155.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9301.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4579.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10943.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12728.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2720.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "582.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13227.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12052.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1333.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2603.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2731.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3434.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "788.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "605.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6195.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1350.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8710.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10544.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4391.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9692.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7401.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "230.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "207.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3608.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3789.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12160.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12870.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10069.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3366.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10806.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9681.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1015.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8798.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2514.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10633.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10883.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11701.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2315.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4626.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11307.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11925.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4259.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5061.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9462.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3987.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "293.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7728.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9516.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12834.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3980.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "386.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1106.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2105.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "446.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10271.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8419.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12093.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "317.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6295.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6610.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5597.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1234.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4995.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9095.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6011.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "255.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3664.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11262.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9388.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12596.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13420.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11911.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2993.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2552.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9353.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9577.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9864.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8243.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13500.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9854.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7737.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12293.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3731.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10567.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10111.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11256.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10543.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7904.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4709.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4116.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5131.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11861.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9435.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12805.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9801.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2195.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11370.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3676.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7742.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "817.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13051.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7387.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7340.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10355.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8089.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12526.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10898.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7136.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12855.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10512.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12336.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11726.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6774.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1324.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6813.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9737.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6366.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9316.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "992.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9033.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5950.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5528.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8414.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4189.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9052.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12478.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1405.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3235.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1514.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6919.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9774.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5640.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9444.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12449.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4432.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8192.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7886.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9431.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2616.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1280.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2477.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6123.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7814.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "901.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6720.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4628.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11303.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2986.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10783.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "258.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1248.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7930.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12122.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6678.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9957.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7111.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9235.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1243.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5693.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2305.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2040.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9192.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11375.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9674.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8855.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1641.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9080.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4233.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12952.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2135.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7696.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11751.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2187.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3196.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6555.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8011.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1290.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9151.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11625.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7426.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1462.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1777.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6015.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12520.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8944.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10309.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7336.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7726.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12768.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12012.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5710.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4198.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4901.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7806.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12537.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3593.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9779.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8990.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3979.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10897.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4841.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4068.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12301.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2640.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13512.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13385.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7827.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11670.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13029.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9937.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2811.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6333.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5124.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "66.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5403.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "235.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11080.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9489.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1444.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11588.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6264.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13324.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5230.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8519.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10524.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12599.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "917.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8336.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6811.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7084.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9323.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1460.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7607.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1061.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12321.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6473.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12546.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2877.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9432.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7145.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2760.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6945.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4899.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10906.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11150.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5510.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3455.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9927.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2316.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11276.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "1497.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4543.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5091.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "40.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5122.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11191.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10315.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1964.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "624.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2852.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2506.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4212.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7877.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12051.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3957.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10893.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1623.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9793.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2910.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4653.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12279.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11802.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4609.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8115.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11296.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9093.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9383.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12009.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7223.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11118.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3381.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7244.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2581.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2958.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12179.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11373.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2114.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9364.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10695.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1158.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5848.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "512.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5815.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7909.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7044.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11761.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9916.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9248.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "544.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3679.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7420.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2723.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5530.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4498.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2994.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1184.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11169.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8924.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3194.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "985.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7379.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2926.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4204.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7288.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10223.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4526.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10493.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6812.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13214.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12662.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3933.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7268.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3029.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3710.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1855.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13409.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7356.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4568.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2099.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7790.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6320.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2460.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1948.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10739.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13020.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1119.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13128.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11050.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7195.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2560.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8463.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3458.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "8352.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11847.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8170.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10293.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5314.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2625.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6905.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10672.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10232.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4993.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8946.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3508.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1189.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9107.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "809.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "171.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9047.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13490.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10962.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10388.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "180.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "781.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12627.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2594.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7543.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7073.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12195.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13190.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7447.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12368.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5788.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10858.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3522.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6469.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13502.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9834.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7994.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10846.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6033.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "700.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12214.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11661.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8986.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6922.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2738.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7416.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2494.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "553.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "574.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1262.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9900.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1677.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "575.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "447.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13049.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11212.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3697.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12770.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11955.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13423.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3087.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3046.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12734.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9553.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8557.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4194.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13487.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11184.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12221.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7529.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4714.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4017.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9256.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6006.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6197.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1187.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8104.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1556.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7970.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12487.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1310.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6163.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7819.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "814.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8486.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12141.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3257.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3330.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "70.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10140.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1120.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8595.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4885.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11917.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4718.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6616.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3284.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2290.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10978.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8764.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2203.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7164.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4208.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "714.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "13437.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6401.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5251.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5095.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11000.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3741.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8979.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3803.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12087.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1712.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1093.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4977.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4689.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9227.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12927.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13000.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11704.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11654.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "340.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9231.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10416.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12924.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6816.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13484.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10869.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9823.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "3738.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3044.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6121.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11261.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12392.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4522.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8285.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12244.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7667.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "101.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "2775.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13203.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10466.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8498.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11887.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11895.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6097.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1950.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8685.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9200.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2374.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5416.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2557.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5087.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8960.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3362.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9844.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6119.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "12371.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "7665.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8576.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "6637.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9096.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7698.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "10547.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "2470.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6045.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "339.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11004.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "11337.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4250.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "631.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9351.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "5746.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1681.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5074.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "4195.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3931.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "4883.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6795.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9818.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "13184.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "11559.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9241.json",
+    "raw_label": "true",
+    "ground_truth": "REAL",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "8902.json",
+    "raw_label": "mostly-true",
+    "ground_truth": "REAL",
+    "predicted": "REAL"
+  },
+  {
+    "id": "12511.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "7285.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "1005.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "9436.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "5671.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6699.json",
+    "raw_label": "pants-fire",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "9788.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "REAL"
+  },
+  {
+    "id": "10710.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "3186.json",
+    "raw_label": "barely-true",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  },
+  {
+    "id": "6743.json",
+    "raw_label": "false",
+    "ground_truth": "FAKE",
+    "predicted": "FAKE"
+  }
+]

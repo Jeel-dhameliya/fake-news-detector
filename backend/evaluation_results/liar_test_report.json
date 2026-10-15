@@ -1,0 +1,134 @@
+{
+  "title": "TruthLens \u2014 Out-of-Domain Model Evaluation Report",
+  "evaluation_scope": "Exploratory agreement assessment under operational binary mapping",
+  "evaluation_timestamp_utc": "2026-10-14T08:27:29.478786+00:00",
+  "model": {
+    "model_id": "dima806/fake-news-classifier",
+    "architecture": "BertForSequenceClassification",
+    "id2label": {
+      "0": "FAKE",
+      "1": "REAL"
+    },
+    "weights_frozen": true
+  },
+  "dataset": {
+    "source_name": "LIAR Benchmark (UCSB original publication archive)",
+    "source_archive_url": "https://www.cs.ucsb.edu/~william/data/liar_dataset.zip",
+    "archive_sha256": "611c1addad919743dde15822b87a60bfb760d8f85597f25289e34621800654c7",
+    "archive_size_bytes": 1013571,
+    "retrieval_timestamp_utc": "2026-10-14T07:19:28.888607+00:00",
+    "test_file_name": "test.tsv",
+    "split": "test",
+    "license": "unknown",
+    "licensing_limitation_note": "Hugging Face and original LIAR metadata list license as unknown (scraped from PolitiFact API). Retrieved strictly for academic research and model evaluation. Statement texts are not redistributed.",
+    "text_field_evaluated": "statement",
+    "metadata_fields_excluded": [
+      "speaker",
+      "party",
+      "context",
+      "state",
+      "job_title",
+      "history"
+    ],
+    "relationship_to_huggingface": "The Hugging Face dataset ucsbai/liar (commit ff3a15312273f5294c4418c1c3c28781e1d51afe) contains only a legacy dataset script (`liar.py`) that delegates to this same UCSB archive URL. Because modern Hugging Face datasets library deprecates arbitrary script execution, the evaluated data was downloaded directly from the authoritative UCSB zip archive and verified via SHA-256."
+  },
+  "operational_mapping": {
+    "protocol": {
+      "FAKE": [
+        "false",
+        "pants-fire",
+        "barely-true"
+      ],
+      "REAL": [
+        "true",
+        "mostly-true"
+      ],
+      "EXCLUDED": [
+        "half-true"
+      ]
+    },
+    "research_rationale": "The LIAR benchmark provides 6-degree fine-grained truthfulness ratings for political statements, whereas dima806/fake-news-classifier outputs binary classification into FAKE and REAL classes. This operational mapping is a simplifying convention for testing out-of-domain transfer agreement. It does not constitute universal ground truth or definitive factual accuracy."
+  },
+  "sample_counts": {
+    "total_test_rows": 1283,
+    "evaluated_rows": 1016,
+    "total_excluded_rows": 267,
+    "raw_test_label_distribution": {
+      "true": 211,
+      "false": 250,
+      "half-true": 267,
+      "pants-fire": 92,
+      "barely-true": 214,
+      "mostly-true": 249
+    },
+    "evaluated_ground_truth_distribution": {
+      "FAKE": 556,
+      "REAL": 460
+    },
+    "predicted_distribution": {
+      "REAL": 224,
+      "FAKE": 792
+    },
+    "excluded_label_distribution": {
+      "half-true": 267
+    }
+  },
+  "metrics": {
+    "accuracy": 0.4921,
+    "positive_class_fake": {
+      "precision": 0.5253,
+      "recall": 0.7482,
+      "f1_score": 0.6172,
+      "support": 556
+    },
+    "class_real": {
+      "precision": 0.375,
+      "recall": 0.1826,
+      "f1_score": 0.2456,
+      "support": 460
+    },
+    "macro_f1": 0.4314,
+    "weighted_f1": 0.449
+  },
+  "confusion_matrix": {
+    "convention": "Rows represent actual classes [FAKE, REAL]; columns represent predicted classes [FAKE, REAL]",
+    "row_labels": [
+      "FAKE",
+      "REAL"
+    ],
+    "col_labels": [
+      "FAKE",
+      "REAL"
+    ],
+    "matrix": [
+      [
+        416,
+        140
+      ],
+      [
+        376,
+        84
+      ]
+    ],
+    "breakdown": {
+      "actual_fake_predicted_fake": 416,
+      "actual_fake_predicted_real": 140,
+      "actual_real_predicted_fake": 376,
+      "actual_real_predicted_real": 84
+    }
+  },
+  "methodological_limitations": [
+    "Exploratory agreement assessment: This evaluation measures agreement between model binary outputs and an operational mapping of LIAR's 6-point truthfulness ratings. It does not establish universal fact-checking accuracy or proof of factual truth.",
+    "Operational label mapping: Grouping fine-grained PolitiFact ratings into binary FAKE (false, pants-fire, barely-true) and REAL (true, mostly-true) while excluding ambiguous half-true ratings is a simplifying research convention, not ground-truth equivalence.",
+    "Observed prediction distribution: The model demonstrated a marked tendency to predict FAKE across the evaluated statements (792 out of 1,016, or 77.95%).",
+    "Inability to establish causality or training overlap: Training corpus provenance, training-set overlap with political statements, and causal mechanisms for the observed prediction patterns cannot be established from this evaluation alone, as training logs and datasets for dima806/fake-news-classifier are not independently verified.",
+    "Confidence scores: Logits and softmax probabilities reflect classification certainty under the model's internal parameters and priors, not calibrated probabilities of real-world veracity.",
+    "Non-author benchmark: This independent evaluation was conducted by TruthLens researchers and is not an official benchmark score from the model author."
+  ],
+  "compact_predictions_artifact": "backend/evaluation_results/liar_predictions_compact.json",
+  "execution_environment": {
+    "device": "mps",
+    "batch_size": 32,
+    "pytorch_version": "2.14.1"
+  }
+}
