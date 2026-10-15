@@ -1,0 +1,358 @@
+{
+  "protocol": {
+    "benchmark_dataset": "LIAR validation split (valid.tsv)",
+    "archive_source_url": "https://www.cs.ucsb.edu/~william/data/liar_dataset.zip",
+    "archive_sha256": "611c1addad919743dde15822b87a60bfb760d8f85597f25289e34621800654c7",
+    "accounting": {
+      "split_filename": "valid.tsv",
+      "total_rows": 1284,
+      "evaluated_rows": 1036,
+      "excluded_rows": 248,
+      "raw_counts": {
+        "barely-true": 237,
+        "pants-fire": 116,
+        "false": 263,
+        "half-true": 248,
+        "true": 169,
+        "mostly-true": 251
+      },
+      "excluded_counts": {
+        "half-true": 248
+      },
+      "mapped_ground_truth_counts": {
+        "FAKE": 616,
+        "REAL": 420
+      }
+    },
+    "screening_criteria": {
+      "min_accuracy_over_majority": 0.5946,
+      "min_real_recall": 0.4,
+      "min_macro_f1": 0.55,
+      "min_polar_accuracy": 0.5
+    },
+    "operational_mapping": {
+      "false": "FAKE",
+      "pants-fire": "FAKE",
+      "barely-true": "FAKE",
+      "true": "REAL",
+      "mostly-true": "REAL",
+      "half-true": null
+    }
+  },
+  "majority_class_baseline": {
+    "strategy": "Always predict FAKE",
+    "metrics": {
+      "accuracy": 0.5946,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.3729,
+      "weighted_f1": 0.4434,
+      "fake_class": {
+        "precision": 0.5946,
+        "recall": 1.0,
+        "f1": 0.7458
+      },
+      "real_class": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0
+      },
+      "confusion_matrix": {
+        "description": "Rows: actual [FAKE, REAL], Columns: predicted [FAKE, REAL]",
+        "matrix": [
+          [
+            616,
+            0
+          ],
+          [
+            420,
+            0
+          ]
+        ]
+      },
+      "predicted_counts": {
+        "FAKE": 1036,
+        "REAL": 0
+      },
+      "polar_extreme_accuracy": 0.407,
+      "polar_counts": {
+        "total_polar_items": 285,
+        "pants_fire_items": 116,
+        "true_items": 169,
+        "correct_polar_predictions": 116
+      }
+    },
+    "screening_outcome": {
+      "all_criteria_met": false,
+      "detailed_checks": {
+        "accuracy_greater_than_majority": {
+          "required": "> 0.5946",
+          "observed": 0.5946,
+          "passed": false
+        },
+        "real_recall_at_least_40": {
+          "required": ">= 0.4",
+          "observed": 0.0,
+          "passed": false
+        },
+        "macro_f1_at_least_0_55": {
+          "required": ">= 0.55",
+          "observed": 0.3729,
+          "passed": false
+        },
+        "polar_accuracy_greater_than_50": {
+          "required": "> 0.5",
+          "observed": 0.407,
+          "passed": false
+        }
+      }
+    }
+  },
+  "models": {
+    "baseline": {
+      "model_id": "dima806/fake-news-classifier",
+      "revision": "821dc8625d763bdb4997ff1e8a2405b21ff63b83",
+      "license": "apache-2.0",
+      "architecture": "BertForSequenceClassification (bert-base-cased)",
+      "max_sequence_length": 512,
+      "index_to_binary_mapping": {
+        "0": "FAKE",
+        "1": "REAL"
+      },
+      "performance": {
+        "total_inference_time_seconds": 3.897,
+        "throughput_samples_per_second": 265.82,
+        "device": "mps",
+        "batch_size": 32
+      },
+      "metrics": {
+        "accuracy": 0.5454,
+        "balanced_accuracy": 0.4874,
+        "macro_f1": 0.4595,
+        "weighted_f1": 0.5002,
+        "fake_class": {
+          "precision": 0.587,
+          "recall": 0.7938,
+          "f1": 0.6749
+        },
+        "real_class": {
+          "precision": 0.3744,
+          "recall": 0.181,
+          "f1": 0.244
+        },
+        "confusion_matrix": {
+          "description": "Rows: actual [FAKE, REAL], Columns: predicted [FAKE, REAL]",
+          "matrix": [
+            [
+              489,
+              127
+            ],
+            [
+              344,
+              76
+            ]
+          ]
+        },
+        "predicted_counts": {
+          "FAKE": 833,
+          "REAL": 203
+        },
+        "polar_extreme_accuracy": 0.3754,
+        "polar_counts": {
+          "total_polar_items": 285,
+          "pants_fire_items": 116,
+          "true_items": 169,
+          "correct_polar_predictions": 107
+        }
+      },
+      "screening_outcome": {
+        "all_criteria_met": false,
+        "detailed_checks": {
+          "accuracy_greater_than_majority": {
+            "required": "> 0.5946",
+            "observed": 0.5454,
+            "passed": false
+          },
+          "real_recall_at_least_40": {
+            "required": ">= 0.4",
+            "observed": 0.181,
+            "passed": false
+          },
+          "macro_f1_at_least_0_55": {
+            "required": ">= 0.55",
+            "observed": 0.4595,
+            "passed": false
+          },
+          "polar_accuracy_greater_than_50": {
+            "required": "> 0.5",
+            "observed": 0.3754,
+            "passed": false
+          }
+        }
+      }
+    },
+    "candidate_1": {
+      "model_id": "naheelkk/fake-news-bert-liar",
+      "revision": "05f462ac5b742bcbb1d6eb5ff916bbc9f61a4fc8",
+      "license": "apache-2.0",
+      "architecture": "BertForSequenceClassification (bert-base-uncased)",
+      "max_sequence_length": 128,
+      "index_to_binary_mapping": {
+        "0": "FAKE",
+        "1": "REAL"
+      },
+      "performance": {
+        "total_inference_time_seconds": 3.594,
+        "throughput_samples_per_second": 288.24,
+        "device": "mps",
+        "batch_size": 32
+      },
+      "metrics": {
+        "accuracy": 0.5376,
+        "balanced_accuracy": 0.5976,
+        "macro_f1": 0.5176,
+        "weighted_f1": 0.499,
+        "fake_class": {
+          "precision": 0.8278,
+          "recall": 0.2808,
+          "f1": 0.4194
+        },
+        "real_class": {
+          "precision": 0.4643,
+          "recall": 0.9143,
+          "f1": 0.6159
+        },
+        "confusion_matrix": {
+          "description": "Rows: actual [FAKE, REAL], Columns: predicted [FAKE, REAL]",
+          "matrix": [
+            [
+              173,
+              443
+            ],
+            [
+              36,
+              384
+            ]
+          ]
+        },
+        "predicted_counts": {
+          "FAKE": 209,
+          "REAL": 827
+        },
+        "polar_extreme_accuracy": 0.7263,
+        "polar_counts": {
+          "total_polar_items": 285,
+          "pants_fire_items": 116,
+          "true_items": 169,
+          "correct_polar_predictions": 207
+        }
+      },
+      "screening_outcome": {
+        "all_criteria_met": false,
+        "detailed_checks": {
+          "accuracy_greater_than_majority": {
+            "required": "> 0.5946",
+            "observed": 0.5376,
+            "passed": false
+          },
+          "real_recall_at_least_40": {
+            "required": ">= 0.4",
+            "observed": 0.9143,
+            "passed": true
+          },
+          "macro_f1_at_least_0_55": {
+            "required": ">= 0.55",
+            "observed": 0.5176,
+            "passed": false
+          },
+          "polar_accuracy_greater_than_50": {
+            "required": "> 0.5",
+            "observed": 0.7263,
+            "passed": true
+          }
+        }
+      }
+    },
+    "candidate_2": {
+      "model_id": "Vs2882/liar_binaryclassifier_roberta_base",
+      "revision": "e8d0b955f5fcb88c95534da00dab124f0f864e4c",
+      "license": "mit",
+      "architecture": "RobertaForSequenceClassification (roberta-base)",
+      "max_sequence_length": 512,
+      "index_to_binary_mapping": {
+        "0": "FAKE",
+        "1": "REAL"
+      },
+      "performance": {
+        "total_inference_time_seconds": 3.733,
+        "throughput_samples_per_second": 277.55,
+        "device": "mps",
+        "batch_size": 32
+      },
+      "metrics": {
+        "accuracy": 0.5618,
+        "balanced_accuracy": 0.5671,
+        "macro_f1": 0.559,
+        "weighted_f1": 0.5656,
+        "fake_class": {
+          "precision": 0.6614,
+          "recall": 0.539,
+          "f1": 0.5939
+        },
+        "real_class": {
+          "precision": 0.4682,
+          "recall": 0.5952,
+          "f1": 0.5241
+        },
+        "confusion_matrix": {
+          "description": "Rows: actual [FAKE, REAL], Columns: predicted [FAKE, REAL]",
+          "matrix": [
+            [
+              332,
+              284
+            ],
+            [
+              170,
+              250
+            ]
+          ]
+        },
+        "predicted_counts": {
+          "FAKE": 502,
+          "REAL": 534
+        },
+        "polar_extreme_accuracy": 0.607,
+        "polar_counts": {
+          "total_polar_items": 285,
+          "pants_fire_items": 116,
+          "true_items": 169,
+          "correct_polar_predictions": 173
+        }
+      },
+      "screening_outcome": {
+        "all_criteria_met": false,
+        "detailed_checks": {
+          "accuracy_greater_than_majority": {
+            "required": "> 0.5946",
+            "observed": 0.5618,
+            "passed": false
+          },
+          "real_recall_at_least_40": {
+            "required": ">= 0.4",
+            "observed": 0.5952,
+            "passed": true
+          },
+          "macro_f1_at_least_0_55": {
+            "required": ">= 0.55",
+            "observed": 0.559,
+            "passed": true
+          },
+          "polar_accuracy_greater_than_50": {
+            "required": "> 0.5",
+            "observed": 0.607,
+            "passed": true
+          }
+        }
+      }
+    }
+  }
+}
