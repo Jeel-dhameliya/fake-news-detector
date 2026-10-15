@@ -37,18 +37,18 @@ export const ErrorSection: React.FC<ErrorSectionProps> = ({ error, onRetry }) =>
   return (
     <div
       role="alert"
-      className="bg-rose-950/20 rounded-2xl border border-rose-500/30 p-6 sm:p-8 backdrop-blur-sm shadow-xl"
+      className="bg-rose-50/90 rounded-xl border border-rose-300 p-6 sm:p-8 shadow-classic"
     >
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
         <div className="flex items-start gap-3.5">
-          <div className="w-10 h-10 rounded-xl bg-rose-500/10 border border-rose-500/30 flex items-center justify-center shrink-0 text-rose-400 mt-0.5 sm:mt-0">
+          <div className="w-10 h-10 rounded-lg bg-rose-100 border border-rose-300 flex items-center justify-center shrink-0 text-rose-700 mt-0.5 sm:mt-0 shadow-xs">
             <IconComponent className="w-5 h-5" />
           </div>
           <div>
-            <h3 className="text-base font-semibold text-rose-300 mb-1">
+            <h3 className="text-lg font-serif font-bold text-rose-950 mb-1">
               {errorTitle}
             </h3>
-            <p className="text-xs sm:text-sm text-rose-200/90 leading-relaxed max-w-xl">
+            <p className="text-xs sm:text-sm font-serif text-rose-900/90 leading-relaxed max-w-xl">
               {message}
             </p>
           </div>
@@ -57,10 +57,10 @@ export const ErrorSection: React.FC<ErrorSectionProps> = ({ error, onRetry }) =>
         <button
           type="button"
           onClick={onRetry}
-          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-rose-300 hover:text-rose-200 border border-rose-800/60 font-medium text-xs transition-colors shrink-0"
+          className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-lg bg-white hover:bg-rose-100/60 text-rose-900 border border-rose-300 font-serif font-bold text-xs transition-colors shrink-0 shadow-classic"
         >
           <RotateCcw className="w-3.5 h-3.5" />
-          <span>Retry Request</span>
+          <span>Retry Transmission</span>
         </button>
       </div>
     </div>

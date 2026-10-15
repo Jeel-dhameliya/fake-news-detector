@@ -79,10 +79,10 @@ export const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-navy-900 text-slate-100 selection:bg-cyan-500 selection:text-navy-900">
+    <div className="min-h-screen flex flex-col bg-[#faf9f5] text-stone-900 selection:bg-amber-100 selection:text-amber-950 font-sans">
       <Navbar />
 
-      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8">
+      <main className="flex-1 max-w-4xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12 space-y-9">
         <Header />
 
         {/* Input Panel */}
