@@ -1,5 +1,6 @@
 """Pydantic schemas for news classification prediction requests and responses."""
 
+import unicodedata
 from typing import Dict
 from pydantic import BaseModel, Field, field_validator
 
@@ -22,13 +23,21 @@ class PredictionRequest(BaseModel):
     @field_validator("text")
     @classmethod
     def validate_text_content(cls, value: str) -> str:
-        """Validates that input text is non-empty, non-whitespace, and within safe length limits."""
+        """Validates that input text is non-empty, contains substantive visible content, and is within safe length limits."""
         if not isinstance(value, str):
             raise ValueError("Input text must be a string.")
 
         trimmed = value.strip()
         if not trimmed:
             raise ValueError("Input text cannot be empty or whitespace-only.")
+
+        # Reject inputs composed solely of zero-width, invisible formatting, or control characters
+        has_substantive_content = any(
+            not c.isspace() and unicodedata.category(c) not in ("Cf", "Cc", "Cs", "Cn")
+            for c in value
+        )
+        if not has_substantive_content:
+            raise ValueError("Input text cannot consist solely of invisible or zero-width characters.")
 
         if len(value) > MAX_INPUT_LENGTH:
             raise ValueError(

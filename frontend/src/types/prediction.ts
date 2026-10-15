@@ -25,6 +25,11 @@ export interface HealthResponse {
   status: string;
   service: string;
   version: string;
+  api_liveness?: string;
+  model_readiness?: 'ready' | 'unloaded' | string;
+  model_loaded?: boolean;
+  model_id?: string;
+  device?: string | null;
 }
 
 export interface ApiError {

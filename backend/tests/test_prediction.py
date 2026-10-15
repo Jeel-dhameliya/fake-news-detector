@@ -164,6 +164,7 @@ def test_health_check_remains_functional():
     assert data["status"] == "healthy"
     assert data["service"] == "TruthLens Backend"
     assert data["version"] == "0.1.0"
+    assert data["api_liveness"] == "alive"
 
 
 def test_root_endpoint_remains_functional():
@@ -171,3 +172,84 @@ def test_root_endpoint_remains_functional():
     response = client.get("/")
     assert response.status_code == 200
     assert "TruthLens API" in response.json()["message"]
+
+
+def test_predict_zero_width_space_returns_422():
+    """Verify text consisting solely of zero-width spaces (U+200B) is rejected with HTTP 422."""
+    for payload_text in ["\u200b", "   \u200b\u200b   ", "\u200b\u200b\u200b"]:
+        response = client.post("/api/predict", json={"text": payload_text})
+        assert response.status_code == 422
+        data = response.json()
+        assert any("invisible or zero-width" in str(err) for err in data["detail"])
+
+
+def test_predict_bom_zwnbs_returns_422():
+    """Verify text consisting solely of BOM/zero-width no-break spaces (U+FEFF) is rejected with HTTP 422."""
+    for payload_text in ["\ufeff", " \ufeff ", "\ufeff\u200b"]:
+        response = client.post("/api/predict", json={"text": payload_text})
+        assert response.status_code == 422
+        data = response.json()
+        assert any("invisible or zero-width" in str(err) for err in data["detail"])
+
+
+def test_predict_embedded_invisible_character_in_valid_text_succeeds():
+    """Verify legitimate text containing embedded formatting characters is accepted as-is without broad mutation."""
+    mock_classifier = MagicMock(spec=FakeNewsClassifier)
+    mock_classifier.predict.return_value = {
+        "predicted_label": "REAL",
+        "confidence": 0.95,
+        "model_confidence": 0.95,
+        "class_probabilities": {"FAKE": 0.05, "REAL": 0.95},
+        "model_id": "dima806/fake-news-classifier",
+        "device": "cpu",
+    }
+    app.dependency_overrides[get_classifier] = lambda: mock_classifier
+
+    # Valid sentence with an embedded zero-width space
+    valid_text_with_zwsp = "Government\u200b announcement regarding regional public health initiatives."
+    response = client.post("/api/predict", json={"text": valid_text_with_zwsp})
+
+    assert response.status_code == 200
+    assert response.json()["predicted_label"] == "REAL"
+    # Ensure text was passed as supplied to classifier without destructive mutation
+    mock_classifier.predict.assert_called_once_with(valid_text_with_zwsp)
+
+
+def test_predict_malformed_json_returns_422_on_both_routes():
+    """Verify malformed JSON payloads return controlled HTTP 422 error on both prediction routes."""
+    for route in ["/api/predict", "/predict"]:
+        response = client.post(
+            route,
+            content="{invalid json format: missing quotes",
+            headers={"Content-Type": "application/json"},
+        )
+        assert response.status_code == 422
+        assert "detail" in response.json()
+
+
+def test_predict_json_array_payload_returns_422():
+    """Verify JSON array payloads return controlled HTTP 422 on both routes."""
+    for route in ["/api/predict", "/predict"]:
+        response = client.post(route, json=[{"text": "valid text inside array"}])
+        assert response.status_code == 422
+        assert "detail" in response.json()
+
+
+def test_predict_scalar_json_payload_returns_422():
+    """Verify scalar JSON payloads return controlled HTTP 422."""
+    for scalar in ["plain scalar string", 12345, True]:
+        response = client.post("/api/predict", json=scalar)
+        assert response.status_code == 422
+        assert "detail" in response.json()
+
+
+def test_predict_unsupported_content_type_returns_422():
+    """Verify unsupported content types like text/plain return controlled HTTP 422."""
+    for route in ["/api/predict", "/predict"]:
+        response = client.post(
+            route,
+            content="Headline statement submitted as raw plain text",
+            headers={"Content-Type": "text/plain"},
+        )
+        assert response.status_code == 422
+        assert "detail" in response.json()

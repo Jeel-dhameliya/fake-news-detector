@@ -77,7 +77,7 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
                       : 'bg-rose-950/60 border-rose-800 text-rose-300'
                   }`}
                 >
-                  {confidencePercent}% Confidence
+                  {confidencePercent}% Model Output Score
                 </span>
               </div>
             </div>
@@ -98,13 +98,13 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
 
         {/* Probability Distribution */}
         <div className="pt-6">
-          <div className="flex items-center justify-between mb-3">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-3">
             <span className="text-xs font-semibold text-slate-300 flex items-center gap-1.5">
               <BarChart2 className="w-4 h-4 text-cyan-400" />
-              Class Probability Distribution
+              Model Output Distribution
             </span>
             <span className="text-xs text-slate-400">
-              Softmax output over fine-tuned classes
+              Softmax score distribution over binary labels (not calibrated real-world probability)
             </span>
           </div>
 
@@ -147,37 +147,40 @@ export const ResultsSection: React.FC<ResultsSectionProps> = ({ result }) => {
         </div>
       </div>
 
-      {/* Mandatory Responsible Presentation & Interpretation Notice */}
-      <div className="rounded-2xl border border-amber-500/30 bg-amber-950/20 p-5 sm:p-6 backdrop-blur-sm">
+      {/* Mandatory Responsible Presentation & Benchmark Limitations Notice */}
+      <aside
+        aria-label="Model Limitations and Benchmark Notice"
+        className="rounded-2xl border border-amber-500/30 bg-amber-950/20 p-5 sm:p-6 backdrop-blur-sm"
+      >
         <div className="flex items-start gap-3">
-          <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" />
-          <div className="space-y-2 text-xs leading-relaxed text-amber-200/90">
+          <AlertTriangle className="w-5 h-5 text-amber-400 shrink-0 mt-0.5" aria-hidden="true" />
+          <div className="space-y-3 text-xs leading-relaxed text-amber-200/90">
             <h4 className="font-semibold text-amber-300 text-sm">
-              Critical Interpretation Notice & Model Limitations
+              Model Limitations & Benchmark Performance Disclosure
             </h4>
             <p>
-              This verdict is an <strong>automated statistical machine-learning prediction</strong> derived from
-              a BERT transformer fine-tuned on historical benchmark news datasets. It is{' '}
-              <strong>not proof of factual truth or falsity</strong>.
+              TruthLens provides an automated score from a fine-tuned transformer classifier. TruthLens does{' '}
+              <strong>not independently verify claims against authoritative evidence or external facts</strong>.
             </p>
-            <ul className="list-disc pl-4 space-y-1 text-amber-300/80">
+            <ul className="list-disc pl-4 space-y-2 text-amber-300/80">
               <li>
-                <strong>Model Confidence vs. Factuality:</strong> The confidence score reflects how closely the sentence
-                matches statistical patterns from the model's training data. High confidence does <em>not</em> guarantee factual accuracy.
+                <strong>Model Output Score vs. Factuality:</strong> The displayed softmax score reflects the model's relative preference between its output labels under its training distribution. It is{' '}
+                <strong>not a calibrated probability that the claim is factually true or false</strong>.
               </li>
               <li>
-                <strong>No Verification of Underlying Claims:</strong> A <code className="text-emerald-300 font-mono">REAL</code> prediction
-                does not independently verify a statement, and a <code className="text-rose-300 font-mono">FAKE</code> prediction
-                does not prove malicious misinformation.
+                <strong>Empirical Benchmark Limitation:</strong> On the evaluated LIAR test subset (1,016 short claims evaluated under the project's documented binary-label mapping with half-true excluded), the current model (<code className="text-cyan-300 font-mono">dima806/fake-news-classifier</code>) achieved{' '}
+                <strong>49.21% accuracy</strong>, which is below the <strong>54.72% majority-class baseline</strong>.
               </li>
               <li>
-                <strong>Known Domain Sensitivities:</strong> Sentence length, grammatical style, and phrasing can influence
-                predictions independently of real-world veracity. Always verify news claims using primary sources and professional fact-checking organizations.
+                <strong>Scope of Evaluation:</strong> These figures are benchmark results measured under that specific evaluation protocol, not an estimate of universal real-world accuracy across arbitrary text domains.
+              </li>
+              <li>
+                <strong>Verification Guidance:</strong> Machine-learning text classifications should never be treated as definitive fact checks. Always corroborate claims with established primary sources and credentialed fact-checking organizations.
               </li>
             </ul>
           </div>
         </div>
-      </div>
+      </aside>
     </div>
   );
 };

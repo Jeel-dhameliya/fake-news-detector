@@ -1,21 +1,56 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { ShieldCheck, Activity, Github, Cpu } from 'lucide-react';
 import { checkBackendHealth } from '../services/api';
 
 export const Navbar: React.FC = () => {
   const [backendStatus, setBackendStatus] = useState<'checking' | 'online' | 'offline'>('checking');
   const [serviceVersion, setServiceVersion] = useState<string | null>(null);
+  const [modelState, setModelState] = useState<'ready' | 'unloaded' | 'unknown'>('unknown');
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const isCheckingRef = useRef(false);
+
+  const pollHealth = useCallback(async () => {
+    if (isCheckingRef.current) return;
+    isCheckingRef.current = true;
+    setIsRefreshing(true);
+
+    try {
+      const data = await checkBackendHealth();
+      // api_liveness confirms backend process availability
+      if (data.status === 'healthy' || data.api_liveness === 'alive') {
+        setBackendStatus('online');
+        setServiceVersion(data.version || null);
+        if (data.model_readiness === 'ready') {
+          setModelState('ready');
+        } else if (data.model_readiness === 'unloaded') {
+          setModelState('unloaded');
+        } else {
+          setModelState('unknown');
+        }
+      } else {
+        setBackendStatus('offline');
+        setModelState('unknown');
+      }
+    } catch {
+      setBackendStatus('offline');
+      setModelState('unknown');
+    } finally {
+      isCheckingRef.current = false;
+      setIsRefreshing(false);
+    }
+  }, []);
 
   useEffect(() => {
-    checkBackendHealth()
-      .then((data) => {
-        setBackendStatus('online');
-        setServiceVersion(data.version);
-      })
-      .catch(() => {
-        setBackendStatus('offline');
-      });
-  }, []);
+    // Initial health check
+    pollHealth();
+
+    // 30-second polling interval for automatic connectivity recovery
+    const timer = setInterval(() => {
+      pollHealth();
+    }, 30000);
+
+    return () => clearInterval(timer);
+  }, [pollHealth]);
 
   return (
     <header className="border-b border-slate-800/80 bg-slate-950/70 backdrop-blur-md sticky top-0 z-50">
@@ -29,7 +64,7 @@ export const Navbar: React.FC = () => {
             <div className="flex items-center space-x-2">
               <span className="text-xl font-bold tracking-tight text-white">TruthLens</span>
               <span className="text-[10px] font-semibold uppercase px-2 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300">
-                Milestone 3
+                Research
               </span>
             </div>
             <p className="text-xs text-slate-400 hidden sm:block">AI Misinformation & Fake News Classifier</p>
@@ -41,30 +76,36 @@ export const Navbar: React.FC = () => {
           {/* Active Model Pill */}
           <div className="hidden md:flex items-center space-x-1.5 px-2.5 py-1 rounded-lg bg-slate-900/90 border border-slate-800 text-xs text-slate-400">
             <Cpu className="w-3.5 h-3.5 text-cyan-400" />
-            <span className="font-mono text-[11px] text-slate-300">BERT Classifier</span>
+            <span className="font-mono text-[11px] text-slate-300">
+              BERT ({modelState === 'ready' ? 'Loaded' : 'On-Demand'})
+            </span>
           </div>
 
-          {/* Backend Health Status */}
-          <div
-            className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs"
-            aria-live="polite"
+          {/* Backend Health Status with Accessible Recheck Trigger */}
+          <button
+            type="button"
+            onClick={() => pollHealth()}
+            disabled={isRefreshing}
+            className="flex items-center space-x-2 px-3 py-1.5 rounded-lg bg-slate-900/90 border border-slate-800 text-xs hover:border-slate-700 transition-colors focus:outline-none focus:ring-1 focus:ring-cyan-500/50 cursor-pointer disabled:opacity-70"
+            title="Backend health check (polls every 30s; click to recheck now)"
+            aria-label="Backend health status. Click to recheck connectivity."
           >
-            <Activity className="w-3.5 h-3.5 text-slate-400" />
-            <span className="text-slate-400 hidden sm:inline">Backend API:</span>
+            <Activity className={`w-3.5 h-3.5 ${isRefreshing ? 'animate-spin text-cyan-400' : 'text-slate-400'}`} />
+            <span className="text-slate-400 hidden sm:inline">Backend:</span>
             {backendStatus === 'online' ? (
               <span className="inline-flex items-center text-emerald-400 font-medium">
                 <span className="w-2 h-2 rounded-full bg-emerald-400 mr-1.5 animate-pulse"></span>
-                Connected {serviceVersion ? `(v${serviceVersion})` : ''}
+                Online {serviceVersion ? `(v${serviceVersion})` : ''}
               </span>
             ) : backendStatus === 'offline' ? (
-              <span className="inline-flex items-center text-amber-400 font-medium" title="Backend not reachable at http://127.0.0.1:8000">
+              <span className="inline-flex items-center text-amber-400 font-medium">
                 <span className="w-2 h-2 rounded-full bg-amber-400 mr-1.5"></span>
-                Offline
+                Offline (Click to retry)
               </span>
             ) : (
               <span className="text-slate-500">Checking...</span>
             )}
-          </div>
+          </button>
 
           {/* Repository Link */}
           <a

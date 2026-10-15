@@ -1,5 +1,5 @@
 import React from 'react';
-import { AlertCircle, RotateCcw, WifiOff, ServerCrash, Ban } from 'lucide-react';
+import { AlertCircle, RotateCcw, WifiOff, ServerCrash, Ban, Clock } from 'lucide-react';
 import { ApiRequestError } from '../services/api';
 
 interface ErrorSectionProps {
@@ -10,6 +10,7 @@ interface ErrorSectionProps {
 export const ErrorSection: React.FC<ErrorSectionProps> = ({ error, onRetry }) => {
   const isApiError = error instanceof ApiRequestError;
   const status = isApiError ? error.status : undefined;
+  const detail = isApiError ? error.detail : undefined;
   const message = typeof error === 'string' ? error : error.message;
 
   // Select appropriate icon based on status
@@ -22,6 +23,9 @@ export const ErrorSection: React.FC<ErrorSectionProps> = ({ error, onRetry }) =>
   } else if (status === 503) {
     IconComponent = ServerCrash;
     errorTitle = 'Model Service Unavailable (HTTP 503)';
+  } else if (status === 408 || detail === 'TIMEOUT' || message.includes('timed out')) {
+    IconComponent = Clock;
+    errorTitle = 'Request Timeout (15-Second Limit)';
   } else if (status === 0 || message.includes('Network connection error')) {
     IconComponent = WifiOff;
     errorTitle = 'Backend Connection Error';

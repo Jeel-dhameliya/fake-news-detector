@@ -5,6 +5,7 @@ from fastapi import Depends, FastAPI, HTTPException, status
 from fastapi.middleware.cors import CORSMiddleware
 
 try:
+    from app.config import DEFAULT_MODEL_ID
     from app.schemas.prediction import PredictionRequest, PredictionResponse
     from app.services.classifier import (
         FakeNewsClassifier,
@@ -13,6 +14,7 @@ try:
         get_classifier,
     )
 except ImportError:
+    from backend.app.config import DEFAULT_MODEL_ID
     from backend.app.schemas.prediction import PredictionRequest, PredictionResponse
     from backend.app.services.classifier import (
         FakeNewsClassifier,
@@ -53,17 +55,49 @@ def read_root():
         "message": "Welcome to TruthLens API - AI Fake News & Misinformation Detector",
         "docs_url": "/docs",
         "health_url": "/health",
+        "api_health_url": "/api/health",
         "version": "0.1.0",
     }
 
 
-@app.get("/health", tags=["Health"])
+@app.get(
+    "/health",
+    tags=["Health"],
+    summary="Backend operational readiness and liveness check",
+)
+@app.get(
+    "/api/health",
+    tags=["Health"],
+    include_in_schema=False,
+)
 def read_health():
-    """Health check endpoint to verify backend operational readiness."""
+    """Health check endpoint to verify backend operational readiness.
+
+    Returns API process liveness and accurately reports model service state
+    without initializing or downloading model weights.
+    """
+    model_loaded = False
+    device = None
+    model_id = DEFAULT_MODEL_ID
+
+    # Safely inspect existing classifier singleton without triggering instantiation or load()
+    instance = getattr(FakeNewsClassifier, "_instance", None)
+    if instance is not None:
+        model_loaded = bool(getattr(instance, "_is_loaded", False))
+        if hasattr(instance, "device") and instance.device is not None:
+            device = str(instance.device.type)
+        if hasattr(instance, "model_id") and instance.model_id:
+            model_id = instance.model_id
+
     return {
         "status": "healthy",
         "service": "TruthLens Backend",
         "version": "0.1.0",
+        "api_liveness": "alive",
+        "model_readiness": "ready" if model_loaded else "unloaded",
+        "model_loaded": model_loaded,
+        "model_id": model_id,
+        "device": device,
     }
 
 

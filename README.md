@@ -40,14 +40,15 @@ Digital misinformation and distorted headlines spread rapidly across social plat
 - **Transformer Inference Pipeline**: Fine-tuned BERT sequence classification (`dima806/fake-news-classifier`) with 512-token truncation.
 - **Hardware Acceleration**: Automatic device resolution supporting Apple Silicon GPU acceleration via Metal Performance Shaders (`mps`) with reliable fallback to `cpu`.
 - **Lazy Loading & Singleton Caching**: Model weights and tokenizer load once on demand and remain cached in memory across requests.
-- **Strict Input Validation**: Rejects empty strings, whitespace-only submissions, and payloads exceeding 50,000 characters with HTTP 422.
-- **Sanitized Error Handling**: Gracefully handles model loading issues (HTTP 503) and inference failures (HTTP 500) without leaking internal stack traces or secrets.
-- **Dual Endpoint Routing**: Supports both `POST /api/predict` and alias `POST /predict` for seamless local Vite development proxying and direct production routing.
+- **Strict Input Validation**: Rejects empty strings, whitespace-only submissions, zero-width / invisible whitespace characters (`\u200b`, `\ufeff`), and payloads exceeding 50,000 characters with HTTP 422.
+- **Sanitized Error Handling & 15-Second Timeouts**: Handles model loading issues (HTTP 503), inference failures (HTTP 500), and frontend request timeouts (HTTP 408) cleanly without leaking internal stack traces.
+- **Dual Endpoint Routing & Health Parity**: Supports both `POST /api/predict` and alias `POST /predict`, as well as `GET /health` and `GET /api/health` exposing unified API liveness and model readiness contracts.
 - **Modern SaaS Dashboard**: Built with React 18, Vite, TypeScript, and Tailwind CSS.
-- **Responsible Presentation Notice**: Prominently warns users about model uncertainty, dataset biases, and the distinction between statistical confidence and factual ground truth.
+- **Transparent Score Presentation & Benchmark Notice**: Clearly separates model output scores (softmax preference between binary labels) from verified facts, prominently disclosing the LIAR benchmark limitation (49.21% accuracy vs. 54.72% majority baseline).
 - **Demonstration Presets**: Includes pre-configured sample inputs for rapid interface testing, explicitly labeled as demonstration samples rather than verified facts.
-- **Live Backend Health Indicator**: Real-time polling badge in navigation bar verifying connectivity against the `/health` endpoint.
-- **Automated Test Coverage**: 37 backend pytest tests and 6 frontend unit tests validating schemas, error states, evaluation mapping, and regression isolation.
+- **Live Backend Health Indicator & Recovery**: 30-second automated health polling with manual recheck button, distinguishing API liveness from model readiness so unloaded models never show as offline backends.
+- **Automated Test Coverage**: 73 backend pytest tests (runnable completely offline) and 12 frontend unit tests validating schemas, error states, timeout handling, and evaluation mapping.
+- **Continuous Integration (GitHub Actions)**: Automated CI workflow (`.github/workflows/ci.yml`) running backend pytest in offline mode and frontend unit tests and production builds on pushes and pull requests to `main`.
 
 ---
 
@@ -121,6 +122,9 @@ flowchart TD
 
 ```
 fake-news-detector/
+├── .github/
+│   └── workflows/
+│       └── ci.yml                  # GitHub Actions CI workflow (backend & frontend tests/build)
 ├── .gitignore                      # Git exclusion rules (virtual environments, caches, builds)
 ├── README.md                       # Comprehensive project documentation
 ├── backend/                        # FastAPI application & ML service
@@ -216,7 +220,8 @@ pip install -r backend/requirements.txt
 ### 3. Install Frontend Dependencies
 ```bash
 cd frontend
-npm install
+# Clean, deterministic install using committed package-lock.json
+npm ci
 cd ..
 ```
 
@@ -239,9 +244,12 @@ uvicorn app.main:app --port 8000 --reload
 ```
 The FastAPI backend will start at: `http://127.0.0.1:8000`
 - Interactive OpenAPI Docs: `http://127.0.0.1:8000/docs`
-- Health Check: `http://127.0.0.1:8000/health`
+- Health Checks (Parity Routes): `http://127.0.0.1:8000/health` and `http://127.0.0.1:8000/api/health`
 
-> **Note on First Run**: The first prediction request will trigger Hugging Face Transformers to download `dima806/fake-news-classifier` (~433.5 MB) to `~/.cache/huggingface/hub/`. Subsequent inferences use the local cache instantly.
+> **Note on First Run & Request Timeout**:
+> - The model loads lazily upon the **first prediction request**. On cold starts, Hugging Face Transformers downloads `dima806/fake-news-classifier` (~433.5 MB) to `~/.cache/huggingface/hub/`.
+> - The frontend enforces a **15-second request timeout**. In environments with slow network or cold disk I/O, the initial model download may approach or exceed this 15-second limit, presenting a clear timeout alert in the dashboard.
+> - If this occurs, no manual reset is required: the model continues initializing in the background. Simply click **"Retry Request"** once loading finishes to complete classification instantly. Subsequent inferences use the in-memory singleton cache in milliseconds.
 
 ### Terminal 2: Frontend Dashboard (Vite)
 From the repository root:
@@ -257,38 +265,50 @@ The Vite development server will start at: `http://127.0.0.1:5173`
 
 ## Automated Testing & Verification
 
-All automated tests use mocked model dependencies by default, allowing test suites to run completely offline without downloading model weights.
+All automated tests use mocked model dependencies by default, allowing test suites to run completely offline without downloading model weights or requiring network access.
 
 ### 1. Backend Test Suite (Pytest)
-From the repository root:
+Run the 73 backend unit, route, and evaluation tests from the repository root:
 ```bash
+# Standard test run
 ./backend/.venv/bin/pytest backend/tests -v
+
+# Strictly verified offline test run (guarantees zero external network or model calls)
+HF_HUB_OFFLINE=1 TRANSFORMERS_OFFLINE=1 ./backend/.venv/bin/pytest backend/tests -v
 ```
-**Test Coverage Includes**:
-- Health check and root endpoint availability.
-- Prediction request validation (rejecting empty strings, whitespace-only text, oversized text > 50,000 characters).
+**Test Coverage Includes (73 tests)**:
+- Health check route parity (`GET /health` and `GET /api/health`), verifying `api_liveness` and `model_readiness` without eager loading.
+- Prediction route aliases (`POST /api/predict` and `POST /predict`).
+- Input validation (rejecting empty strings, whitespace-only text, zero-width characters `\u200b`/`\ufeff`, and text exceeding 50,000 characters).
 - Verified label mapping compliance (ensuring class index 0 and 1 are dynamically resolved).
-- Probability sanity checks (ensuring non-negative, finite numbers summing to approximately 1.0).
+- Probability sanity checks (ensuring non-negative, finite numbers summing to 1.0).
 - Hardware device resolution and graceful CPU fallback.
-- Sanitized error handling for HTTP 503 and HTTP 500 without leaking stack traces.
-- Regression test verifying distinct inputs are tokenized and processed independently without cross-input caching.
+- Sanitized error handling for HTTP 503 (model load failure) and HTTP 500 (inference error) without leaking stack traces.
+- Regression isolation verifying distinct inputs are tokenized and processed independently.
+- Candidate model evaluation protocol tests (verifying strict `valid.tsv` split enforcement and metric screening criteria).
 - Operational label mapping unit tests (`false`, `pants-fire`, `barely-true` -> `FAKE`; `true`, `mostly-true` -> `REAL`; `half-true` excluded).
-- Metric calculation tests verifying zero-division handling, finite bounds, and confusion matrix totals.
-- Automated integrity verification of saved evaluation reports.
+- Threshold tuning comparison tests and metric calculation integrity checks.
 
 ### 2. Frontend Test Suite (Node.js Native Test Runner)
-From the `frontend/` directory:
+Run the 12 frontend unit tests from the `frontend/` directory:
 ```bash
 cd frontend
 npm test
 ```
-**Test Coverage Includes**:
+**Test Coverage Includes (12 tests)**:
 - Model prediction response schema parsing.
-- HTTP 422 validation error message formatting.
+- HTTP 422 validation error message extraction.
 - HTTP 503 model service unavailable handling.
-- Network connection failure detection.
+- HTTP 500 server inference failure handling.
+- Network connection failure detection (`status: 0`).
+- Deterministic 15-second request timeout handling (`status: 408, detail: 'TIMEOUT'`).
+- Health check payload parsing (`api_liveness`, `model_readiness`, `model_loaded`, `model_id`, `device`).
+- Health status resolution (unloaded model correctly displays as online with on-demand readiness, not offline).
+- Health check timeout and network error handling.
 - Safe probability clamping and fallback handling (preventing `NaN%` displays).
 - Demonstration sample verification against backend character limits.
+
+> **Testing Scope Note**: Automated frontend unit tests validate API service contracts, mock error scenarios, timeout handling, and UI utility functions; they are not browser end-to-end (E2E) tests.
 
 ### 3. Frontend Production Build Check
 From the `frontend/` directory:
@@ -296,7 +316,15 @@ From the `frontend/` directory:
 cd frontend
 npm run build
 ```
-Validates TypeScript compilation (`tsc -b`) and generates production assets in `frontend/dist/`.
+Validates TypeScript compilation (`tsc -b`) and generates production bundle assets in `frontend/dist/`.
+
+### 4. Continuous Integration (GitHub Actions)
+The repository includes automated CI configured in [`.github/workflows/ci.yml`](.github/workflows/ci.yml):
+- **Triggers**: Executed on every `push` and `pull_request` targeting the `main` branch.
+- **Permissions**: Minimum required read-only access (`contents: read`).
+- **Backend Job (`Backend Tests`)**: Runs on `ubuntu-latest` with Python 3.11, installs dependencies from `backend/requirements.txt`, and executes `pytest backend/tests -v` under strict offline environment flags (`HF_HUB_OFFLINE=1`, `TRANSFORMERS_OFFLINE=1`).
+- **Frontend Job (`Frontend Tests and Build`)**: Runs on `ubuntu-latest` with Node.js 20, installs dependencies via `npm ci`, runs `npm test`, and runs `npm run build`.
+- *Note*: Hosted CI executes automatically once changes are pushed to GitHub; local test and build verification confirms configuration correctness but does not replace the hosted execution record.
 
 ---
 
@@ -329,7 +357,7 @@ Validates TypeScript compilation (`tsc -b`) and generates production assets in `
 ```
 
 #### Validation Error (422 Unprocessable Entity)
-Returned when input is empty, whitespace-only, missing, or exceeds 50,000 characters:
+Returned when input is empty, whitespace-only, contains only invisible/zero-width whitespace (such as `\u200b` or `\ufeff`), is missing, or exceeds 50,000 characters:
 ```json
 {
   "detail": [
@@ -362,16 +390,22 @@ Returned on inference computation failure without leaking internal tracebacks:
 
 ---
 
-### 2. Health Check
-* **Route**: `GET /health`
+### 2. Health Check (Parity Routes)
+* **Routes**: `GET /health` and alias `GET /api/health`
 * **Response (200 OK)**:
 ```json
 {
   "status": "healthy",
   "service": "TruthLens Backend",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "api_liveness": "alive",
+  "model_readiness": "unloaded",
+  "model_loaded": false,
+  "model_id": "dima806/fake-news-classifier",
+  "device": "cpu"
 }
 ```
+*Note*: Calling either health endpoint returns API liveness and current model load state instantly **without triggering model loading or weight downloading**. When the model is loaded upon the first prediction, `model_readiness` updates to `"ready"`, `model_loaded` becomes `true`, and `device` reflects the active hardware acceleration device (`"mps"` or `"cpu"`).
 
 ### 3. Root Endpoint
 * **Route**: `GET /`
@@ -461,9 +495,11 @@ Convention: Rows represent **Actual Class** `[FAKE, REAL]`; columns represent **
 | **Total Predicted** | **792** | **224** | **1,016** |
 
 #### Key Empirical Observations
-1. **Marked `FAKE` Prediction Bias**: The model classified **792 out of 1,016** statements (**77.95%**) as `FAKE`.
-2. **Low REAL Recall**: The model correctly identified only **84 out of 460** actual `REAL` statements (**18.26% recall**), incorrectly labeling 376 truthful or mostly-truthful claims as `FAKE`.
-3. **Critical User Caution**: These findings illustrate why automated classifications or high confidence scores must **never** be treated as verified facts or factual proof.
+1. **Below Majority-Class Baseline**: On this evaluated LIAR test subset (1,016 claims), the majority class is `FAKE` with 556 claims (**54.72%**). The model's overall accuracy of **49.21%** falls below this naive majority-class baseline.
+2. **Marked `FAKE` Prediction Bias**: The model classified **792 out of 1,016** statements (**77.95%**) as `FAKE`.
+3. **Low REAL Recall**: The model correctly identified only **84 out of 460** actual `REAL` statements (**18.26% recall**), incorrectly labeling 376 truthful or mostly-truthful claims as `FAKE`.
+4. **Scope of Benchmark**: These figures are outcomes measured under this specific documented binary mapping and test protocol, not an estimate of universal real-world performance across arbitrary text.
+5. **Critical User Caution**: TruthLens does not verify claims against authoritative evidence. Displayed softmax scores reflect classifier preference between trained labels, not calibrated probabilities that a claim is factually true. Machine-learning predictions must **never** be treated as verified facts or factual proof.
 
 ### Reproducibility & Running the Evaluation
 
@@ -526,6 +562,8 @@ TruthLens is an academic research prototype and must be assessed with appropriat
 - **Milestone 3.1 & Commit**: Pre-commit audit, whitespace hygiene, and commit `f5dd823` pushed to `main`.
 - **Milestone 4A**: Comprehensive project documentation and evaluation guide.
 - **Milestones 5.1 – 5.4**: Independent model evaluation against the LIAR benchmark test split, evaluation integrity audit with SHA-256 archive verification, compact predictions artifact export, and complete reproducibility documentation.
+- **Milestones 6B – 6G**: Threshold sensitivity analysis, diagnostic methodology audit, candidate model screening research, candidate validation evaluation protocol, research audit, and commit `857fff3` pushed to `main`.
+- **Milestone 7 (7A – 7E)**: Product reliability audit, backend health route parity (`GET /health` and `GET /api/health`), invisible unicode character validation, frontend 15-second request timeouts, 30-second health recovery polling with manual recheck, model output score transparency and LIAR benchmark limitation disclosures, automated GitHub Actions CI workflow (`.github/workflows/ci.yml`), and comprehensive documentation.
 
 ### Planned Future Milestones
 - **Source & URL Reputation Signals**: Domain classification based on audited journalistic trust datasets.
